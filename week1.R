@@ -89,3 +89,25 @@ q4 <- function () {
   answer$SE_min <- p - z* answer$SE
   answer$SE_max <- p + z* answer$SE  
 }
+
+
+q5e <- function (){
+  N <- 900
+  avg <- 2.2
+  SD <- 2
+  
+  SE <- SD/sqrt(N)
+  z <- 2
+  c(avg - z * SE, avg + z * SE)
+}
+ 
+
+q6b<- function (){
+  N <- 275
+  avg <- 920
+  SD <- 500
+  
+  SE <- SD/sqrt(N)
+  z <- 1
+  c(avg - z * SE, avg + z * SE)
+}
